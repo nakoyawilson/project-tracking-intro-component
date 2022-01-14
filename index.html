@@ -17,10 +17,70 @@
     <title>Frontend Mentor | Project tracking intro component</title>
   </head>
   <body>
-    Product Features Pricing Login New Monograph Dashboard Powerful insights
-    into your team Project planning and time tracking for agile teams Schedule a
-    demo to see a live preview
-
+    <header>
+      <div class="logo-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+          <g fill="#323334" fill-rule="evenodd">
+            <path
+              d="M0 32V.241h23.041zM31.15 32V.241h-4.411L17.48 13.158zM3.645 32l11.854-15.879L27.353 32z"
+            />
+          </g>
+        </svg>
+      </div>
+      <nav>
+        <div class="desktop-nav">
+          <ul>
+            <li class="nav-link">Product</li>
+            <li class="nav-link">Features</li>
+            <li class="nav-link">Pricing</li>
+            <li class="nav-link">Login</li>
+          </ul>
+        </div>
+        <div class="mobile hamburger-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+            <g fill="#242942" fill-rule="evenodd">
+              <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+            </g>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+            <path
+              fill="#242942"
+              fill-rule="evenodd"
+              d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"
+            />
+          </svg>
+        </div>
+        <div class="mobile-nav">
+          <ul>
+            <li class="nav-link">Product</li>
+            <li class="nav-link">Features</li>
+            <li class="nav-link">Pricing</li>
+            <li class="nav-link">Login</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1 class="title">
+          <span class="badge">New</span> Monograph Dashboard
+        </h1>
+        <p class="emphasized-text">Powerful insights into your team</p>
+        <p class="paragraph-text">
+          Project planning and time tracking for agile teams
+        </p>
+        <p>
+          <span class="button-link">Schedule a demo</span> to see a live preview
+        </p>
+      </section>
+      <div class="illustration-wrapper">
+        <img
+          src="images/illustration-devices.svg"
+          alt="Mobile device and laptop illustration"
+          class="illustration"
+        />
+      </div>
+    </main>
     <footer>
       <p class="attribution">
         Challenge by
