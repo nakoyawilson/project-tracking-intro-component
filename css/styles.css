@@ -28,6 +28,7 @@ body {
   color: var(--dark-blue);
   text-transform: uppercase;
   position: relative;
+  max-width: 100vw;
 }
 
 img,
@@ -38,10 +39,10 @@ svg {
 .background-div {
   background-color: var(--light-grayish-blue);
   position: absolute;
-  width: 100%;
+  width: 51vw;
   height: 26.6rem;
   top: -4rem;
-  left: 51%;
+  right: 0;
   z-index: -10;
   border-bottom-left-radius: 60px;
 }
@@ -51,6 +52,10 @@ svg {
 .footer-section {
   width: min(90%, 69.4rem);
   margin-inline: auto;
+}
+
+.container {
+  overflow: hidden;
 }
 
 /* Header Section */
@@ -86,6 +91,11 @@ svg {
   font-weight: 700;
   margin-left: 2.5rem;
   letter-spacing: 1px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .divider {
@@ -161,6 +171,11 @@ svg {
   letter-spacing: 1px;
 }
 
+.button-link:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
 .illustration {
   position: relative;
   left: 6.45rem;
@@ -181,10 +196,11 @@ svg {
 }
 .attribution a {
   color: var(--red);
+  text-decoration: none;
 }
 
 .attribution a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* Media Queries */
@@ -193,6 +209,7 @@ svg {
   .main-section {
     flex-direction: column-reverse;
     gap: 3rem;
+    padding-bottom: 1rem;
   }
 
   .illustration {
@@ -216,9 +233,7 @@ svg {
 
 @media screen and (max-width: 600px) {
   .background-div {
-    width: 100%;
     top: -2rem;
-    left: 51%;
   }
 
   .header-section {
