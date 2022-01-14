@@ -35,12 +35,6 @@ svg {
   display: block;
 }
 
-.container {
-  width: min(100%, 1440px);
-  margin-inline: auto;
-  /* overflow: hidden; */
-}
-
 .background-div {
   background-color: var(--light-grayish-blue);
   position: absolute;
@@ -52,8 +46,15 @@ svg {
   border-bottom-left-radius: 60px;
 }
 
+.header-section,
+.main-section,
+.footer-section {
+  width: min(90%, 69.4rem);
+  margin-inline: auto;
+}
+
 /* Header Section */
-.mobile,
+.hamburger-menu,
 .mobile-nav {
   display: none;
 }
@@ -62,8 +63,8 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 4rem 0 7rem 10.3rem;
-  /* padding-top: 4rem; */
+  margin-top: 4rem;
+  margin-bottom: 7rem;
 }
 
 .desktop-nav {
@@ -97,7 +98,7 @@ svg {
 }
 
 .login {
-  margin: 0 10.3rem 0 2.9rem;
+  margin-left: 2.9rem;
   color: var(--grayish-blue);
 }
 
@@ -105,7 +106,6 @@ svg {
 
 .main-section {
   display: flex;
-  margin-left: 10.3rem;
 }
 
 .title {
@@ -164,6 +164,8 @@ svg {
 .illustration {
   position: relative;
   left: 6.45rem;
+  width: auto;
+  height: auto;
 }
 
 /* Footer Section */
@@ -183,4 +185,73 @@ svg {
 
 .attribution a:hover {
   text-decoration: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .main-section {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .illustration {
+    left: -5%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .close-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .background-div {
+    width: 100%;
+    top: -2rem;
+    left: 51%;
+  }
+
+  .header-section {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .emphasized-text {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  .call-to-action {
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+  }
+
+  .illustration {
+    width: 150%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .title {
+    font-size: 0.75rem;
+  }
+
+  .button-link {
+    padding: 0.9rem 1rem;
+  }
+
+  .paragraph-text {
+    width: 100%;
+  }
 }

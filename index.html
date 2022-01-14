@@ -18,35 +18,37 @@
   </head>
   <body>
     <div class="background-div"></div>
-    <div class="container">
-      <header class="header-section">
-        <div class="logo-wrapper">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-            <g fill="#323334" fill-rule="evenodd">
-              <path
-                d="M0 32V.241h23.041zM31.15 32V.241h-4.411L17.48 13.158zM3.645 32l11.854-15.879L27.353 32z"
-              />
-            </g>
-          </svg>
+    <header class="header-section">
+      <div class="logo-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+          <g fill="#323334" fill-rule="evenodd">
+            <path
+              d="M0 32V.241h23.041zM31.15 32V.241h-4.411L17.48 13.158zM3.645 32l11.854-15.879L27.353 32z"
+            />
+          </g>
+        </svg>
+      </div>
+      <nav>
+        <div class="desktop-nav">
+          <ul class="nav-links desktop-links">
+            <li class="nav-link">Product</li>
+            <li class="nav-link">Features</li>
+            <li class="nav-link">Pricing</li>
+          </ul>
+          <div class="divider"></div>
+          <ul class="nav-links desktop-links">
+            <li class="nav-link login">Login</li>
+          </ul>
         </div>
-        <nav>
-          <div class="desktop-nav">
-            <ul class="nav-links desktop-links">
-              <li class="nav-link">Product</li>
-              <li class="nav-link">Features</li>
-              <li class="nav-link">Pricing</li>
-            </ul>
-            <div class="divider"></div>
-            <ul class="nav-links desktop-links">
-              <li class="nav-link login">Login</li>
-            </ul>
-          </div>
-          <div class="mobile hamburger-menu">
+        <div class="hamburger-menu">
+          <div class="menu-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
               <g fill="#242942" fill-rule="evenodd" \>
                 <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
               </g>
             </svg>
+          </div>
+          <div class="close-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
               <path
                 fill="#242942"
@@ -55,47 +57,47 @@
               />
             </svg>
           </div>
-          <div class="mobile-nav">
-            <ul class="nav-links mobile-links">
-              <li class="nav-link">Product</li>
-              <li class="nav-link">Features</li>
-              <li class="nav-link">Pricing</li>
-              <li class="nav-link login">Login</li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <main class="main-section">
-        <section class="text-wrapper">
-          <h1 class="title">
-            <span class="badge">New</span> Monograph Dashboard
-          </h1>
-          <p class="emphasized-text">Powerful insights into your team</p>
-          <p class="paragraph-text">
-            Project planning and time tracking for agile teams
-          </p>
-          <p class="call-to-action">
-            <span class="button-link">Schedule a demo</span> to see a preview
-          </p>
-        </section>
-        <div class="illustration-wrapper">
-          <img
-            src="images/illustration-devices.svg"
-            alt="Mobile device and laptop illustration"
-            class="illustration"
-          />
         </div>
-      </main>
-      <footer class="footer-section">
-        <p class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by
-          <a href="https://nakoyawilson.netlify.app/">Nakoya Wilson</a>.
+        <div class="mobile-nav">
+          <ul class="nav-links mobile-links">
+            <li class="nav-link">Product</li>
+            <li class="nav-link">Features</li>
+            <li class="nav-link">Pricing</li>
+            <li class="nav-link login">Login</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-section">
+      <section class="text-wrapper">
+        <h1 class="title">
+          <span class="badge">New</span> Monograph Dashboard
+        </h1>
+        <p class="emphasized-text">Powerful insights into your team</p>
+        <p class="paragraph-text">
+          Project planning and time tracking for agile teams
         </p>
-      </footer>
-    </div>
+        <p class="call-to-action">
+          <span class="button-link">Schedule a demo</span> to see a preview
+        </p>
+      </section>
+      <div class="illustration-wrapper">
+        <img
+          src="images/illustration-devices.svg"
+          alt="Mobile device and laptop illustration"
+          class="illustration"
+        />
+      </div>
+    </main>
+    <footer class="footer-section">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://nakoyawilson.netlify.app/">Nakoya Wilson</a>.
+      </p>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
