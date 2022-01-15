@@ -39,7 +39,7 @@ svg {
 .background-div {
   background-color: var(--light-grayish-blue);
   position: absolute;
-  width: 50%;
+  width: 49%;
   height: 26.65rem;
   top: 0;
   right: 0;
@@ -261,7 +261,6 @@ svg {
   }
 
   .divider {
-    /* background-color: var(--grayish-blue); */
     width: 100%;
     height: auto;
     border-top: 1px solid var(--grayish-blue);
