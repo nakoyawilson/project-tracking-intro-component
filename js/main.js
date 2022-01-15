@@ -1,17 +1,17 @@
 const menuIcon = document.querySelector(".menu-icon");
 const closeIcon = document.querySelector(".close-icon");
-const mobileNav = document.querySelector(".mobile-nav");
+const navigation = document.querySelector(".navigation");
 
 menuIcon.addEventListener("click", () => {
   closeIcon.style.display = "block";
   menuIcon.style.display = "none";
-  mobileNav.style.display = "block";
+  navigation.style.display = "block";
   const links = document.querySelectorAll(".nav-link");
   links.forEach((link) => {
     link.addEventListener("click", (event) => {
       closeIcon.style.display = "none";
       menuIcon.style.display = "block";
-      mobileNav.style.display = "none";
+      navigation.style.display = "none";
     });
   });
 });
@@ -19,11 +19,15 @@ menuIcon.addEventListener("click", () => {
 closeIcon.addEventListener("click", () => {
   closeIcon.style.display = "none";
   menuIcon.style.display = "block";
-  mobileNav.style.display = "none";
+  navigation.style.display = "none";
 });
 
 window.addEventListener("resize", () => {
   if (window.innerWidth > 900) {
-    mobileNav.style.display = "none";
+    navigation.style.display = "flex";
+  } else if (closeIcon.style.display === "block") {
+    navigation.style.display = "block";
+  } else {
+    navigation.style.display = "none";
   }
 });
