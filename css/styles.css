@@ -36,6 +36,12 @@ svg {
   display: block;
 }
 
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 .background-div {
   background-color: var(--light-grayish-blue);
   position: absolute;
