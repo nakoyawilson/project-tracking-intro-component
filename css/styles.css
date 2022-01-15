@@ -39,8 +39,8 @@ svg {
 .background-div {
   background-color: var(--light-grayish-blue);
   position: absolute;
-  width: 51vw;
-  height: 26.6rem;
+  width: 50%;
+  height: 26.65rem;
   top: -4rem;
   right: 0;
   z-index: -10;
